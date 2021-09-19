@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+	int n;
+	scanf("%d", &n);
+	int ctr = 0;
+	while (n > 0){
+		n /= 10;
+		ctr++;
+	}
+	if (ctr <= 3){
+		printf("%d\n", ctr);
+	}
+	else{
+		printf("More than 3 digits\n");
+	}
+	
+	return 0;
+}//edrick
